@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: 'Rubik', 'FS Me', sans-serif;
+  background-color: #FFFBDE;
+  overflow: hidden;
+}
+
+header {
+  background-color: #129990;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.6rem;
+  color: white;
+  letter-spacing: 1.5px;
+  margin-left: 12px;
+  text-transform: uppercase;
+}
+
+
+.insta-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.insta-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.insta-username {
+  font-size: 16px;
+  color: white;
+}
+
+.intro {
+  text-align: center;
+  padding: 20px;
+  background-color: #90D1CA;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.intro p {
+  margin: 5px 0 0 0;
+}
+
+.gallery-section {
+  padding: 20px;
+  background-color: #129990;
+  color: white;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  max-height: 320px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #096B68;
+  border-radius: 10px;
+}
+
+.carousel-item {
+  max-height: 300px;
+  height: auto;
+  width: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.carousel-item:hover {
+  transform: scale(1.03);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+  margin: 0 auto 10px auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin: 5px auto 30px auto;
+  padding: 6px 14px;
+  font-size: 14px;
+  background-color: #90D1CA;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #096B68;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
