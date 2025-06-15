@@ -111,6 +111,7 @@ header {
 
 .carousel-item:hover {
   transform: scale(1.03);
+  opacity: 0.90;
 }
 
 .modal {
