@@ -128,11 +128,17 @@ header {
 }
 
 .modal-content {
-  margin: 0 auto 10px auto;
-  display: block;
   max-width: 90%;
-  max-height: 80%;
-  border-radius: 10px;
+  max-height: 90%;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .download-btn {
