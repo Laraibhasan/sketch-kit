@@ -105,6 +105,8 @@ header {
   border-radius: 12px;
   object-fit: contain;
   flex-shrink: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: url('https://img.icons8.com/ios/50/jLkEh2zFhThT/select-cursor.png'), auto;
 }
 
 .carousel-item:hover {
